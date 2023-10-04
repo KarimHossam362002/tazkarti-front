@@ -12,18 +12,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  height: 100%;
-}
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Space Grotesk', sans-serif;
 
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif; 
 }
+/* sidebar */
+
+/* sidebar */
 
 .logo {
   color: var(--color-white);
@@ -114,9 +110,8 @@ font-family: 'Space Grotesk', sans-serif;
 
 .hero {
   height: calc(100vh - 80px);
-  background-image: #EEEEEE;
+  background-image: url(../images/home-bg.jpg);
   background-position: center;
-  flex-grow: 1;
 }
 main .container {
   width: 50%;
@@ -135,7 +130,7 @@ main .title {
   opacity: 0.8;
   transition: 0.5s;
 }
-.btn-primary:hover{
+.btn-primary:hover {
   transform: translateY(-10px);
   transition: 0.5s;
 }
@@ -150,16 +145,14 @@ main .title {
 .bg-color-1:hover {
   background-color: var(--color-green);
   opacity: 0.8;
-  
+
   border: none;
- 
 }
 .bg-color-2:hover {
   background-color: var(--color-orange);
   opacity: 0.8;
-  
+
   border: none;
- 
 }
 
 h3,
@@ -167,142 +160,8 @@ h5 {
   color: rgb(0, 91, 228);
 }
 /* cards */
-/* main */
-main{
-  margin-bottom: 13%;
-}
-main .title{
-  text-align: center;
-  font-weight: bold;
-  color: black;
-}
-
-table tr,th{
-  transition: 1s;
-}
-table tr:hover,th:hover{
-  background: #F2F2F2;
-  transition: 1s;
-}
-.container{
-  width: 100%;
-  margin: auto;
-}
-  /* Faq style */
-  section{
-    min-height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .faq{
-    max-width: 700px;
-    margin-top: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #141D28;
-    cursor: pointer;
-  }
-  .question{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-  }
-  .question h3{
-    font-size: 1.2rem;
-    color: black;
-  }
-  .answer{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.7s ease;
-  }
-  .answer p{
-    padding-top: 1rem;
-    line-height: 1.6;
-    font-size: 1rem;
-  }
-  .faq.active .answer{
-    max-height: 300px;
-    transition: max-height 0.7s ease;
-
-  }
-  .info_line{
-    text-align: center;
-  }
-  /* Faq style */
-  /* about style */
-  .about_title{
-    text-align: center;
-    color: black;
-    margin-top: 45px;
-  }
-  .about_description{
-    margin-bottom: 30px;
-  }
-  .about_section{
-   margin-bottom: 50px;
-  }
-  .about_section_title{
-    font-weight: bold;
-    font-size: 18px;
-    text-align: left;
-  }
-  /* about style */
-  /* contact style */
-  .contact_container{
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  .contact_container h1{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  .contact_container form input ,
-  .contact_container form textarea,
-  .contact_container form select{
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f7f7f7;
-    color: #333;
-  }
-  .contact_container form input:focus ,
-  .contact_container form textarea:focus,
-  .contact_container form select:focus{
-    outline: none;
-    box-shadow: 0 0 5px #333;
-  }
-  .contact_container form button{
-    display: block ;
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #141D28;
-    border-radius: 5px;
-    background-color: #141D28;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  .contact_container form button:hover{
-    background-color: #fff;
-    color: #000;
-    transition: 0.3s ease;
-    border: 2px solid #000;
-  }
-  /* contact style */
-/* main */
 /* footer */
-footer{
+footer {
   position: relative;
   width: 100%;
   background: #141d28;
@@ -311,28 +170,28 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
   flex-direction: column;
-
 }
-footer .social_icon,footer .menu{
+footer .social_icon,
+footer .menu {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
 }
-footer .social_icon li,footer .menu li{
+footer .social_icon li,
+footer .menu li {
   list-style: none;
 }
-footer .social_icon li a{
+footer .social_icon li a {
   font-size: 2em;
   color: #fff;
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
 }
-footer .menu li a{
+footer .menu li a {
   font-size: 1.2em;
   color: #fff;
   margin: 0 10px;
@@ -340,21 +199,21 @@ footer .menu li a{
   text-decoration: none;
   opacity: 0.75;
 }
-footer .social_icon li a:hover{
+footer .social_icon li a:hover {
   transform: translateY(-10px);
   transition: 0.5s;
 }
-footer .menu li a:hover{
+footer .menu li a:hover {
   opacity: 1;
 }
-footer p{
+footer p {
   color: #fff;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 1.1em;
 }
-footer .wave{
+footer .wave {
   position: absolute;
   top: -100px;
   left: 0;
@@ -363,53 +222,44 @@ footer .wave{
   background: url(../images/wave.png);
   background-size: 1000px 100px;
 }
-footer .wave#wave1{
+footer .wave#wave1 {
   z-index: 1000;
   opacity: 1;
   bottom: 0;
   animation: animateWave 4s linear infinite;
-
 }
-footer .wave#wave2{
+footer .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
   animation: animateWave_02 4s linear infinite;
-
 }
-footer .wave#wave3{
+footer .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWave_03 3s linear infinite;
-
 }
-footer .wave#wave4{
+footer .wave#wave4 {
   z-index: 999;
   opacity: 0.7;
   bottom: 20px;
   animation: animateWave_04 3s linear infinite;
-
 }
-@keyframes animateWave{
-  0%{
-    background-position-x:1000px ;
-    
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
   }
-  100%{
-    background-position-x:0px ;
-
+  100% {
+    background-position-x: 0px;
   }
 }
-@keyframes animateWave_02{
-  0%{
-    background-position-x:0px ;
-    
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
   }
-  100%{
-    background-position-x:1000px ;
-
+  100% {
+    background-position-x: 1000px;
   }
 }
-
 /* footer */
