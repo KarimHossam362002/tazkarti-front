@@ -20,8 +20,8 @@
         <div class="menu-bar">
             <a href="index.html"><img src="assets/images/tazkarti.svg" alt></a>
             <ul>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Sign in</a></li>
+                <li><a href="profile.html">Home</a></li>
+                <li><a href="login.html">Sign out</a></li>
                 <li><a href="#">Languages <i class="fas fa-caret-down"></i></a>
 
                     <div class="dropdown-menu">
@@ -33,9 +33,9 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="about.html">About us</a>
-                </li>
-                <li><a href="contact.html">Contact us</a></li>
+                <!-- <li><a href="about.html">About us</a>
+                </li> -->
+                <!-- <li><a href="contact.html">Contact us</a></li> -->
             </ul>
         </div>
     </nav>
@@ -46,47 +46,28 @@
             &nbsp;
             <!-- main body -->
             <main>
-                <h1 class="title">Frequently Asked Questions</h1>
+                
                 <div class="container">
-                    <section>
-                        <div class="faq">
-                            <div class="question">
-                                <h3>What is Tazkarti ID</h3>
-                                <svg width="15" height="10" viewBox="0 0 42 25">
-                                    <path d="M3 3L21 21L39 3" stroke="white"
-                                        stroke-width="7" stroke-linecap="round" />
-                                </svg>
-
-                            </div>
-                            <div class="answer">
-                                <p>Tazkarti ID is a unique identification card
-                                    used to identify a fan registered in
-                                    Tazkarti system. It allows access to any
-                                    sports stadium for matches around Egypt.
-                                    Besides the ticket, it acts as an entry pass
-                                    and an access tool to stadiums.</p>
+                    <div class="contact_container">
+                    <h1>Update information</h1>
+                    <form action="#" enctype="multipart/form-data" method="POST">
+                         <label class="custom-file-label" for="exampleInputFile">Image*</label>
+                        <div class="input-group w-100">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="image" id="exampleInputFile">
+                               
                             </div>
                         </div>
-                        <div class="faq">
-                            <div class="question">
-                                <h3>How much does a Tazkarti ID cost?</h3>
-                                <svg width="15" height="10" viewBox="0 0 42 25">
-                                    <path d="M3 3L21 21L39 3" stroke="white"
-                                        stroke-width="7" stroke-linecap="round" />
-                                </svg>
-
-                            </div>
-                            <div class="answer">
-                                <p>It costs 100 Egyptian pounds to obtain
-                                    Tazkarti ID. However, to get Tazkarti ID,
-                                    you must purchase a ticket.
-
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+                        <label for="name">Name*</label>
+                        <input type="text" placeholder="Name" name="name">
+                        <label for="old_password">old password*</label>
+                        <input type="text" placeholder="old_password" name="old_password">
+                        <label for="new_password">new password*</label>
+                        <input type="text" placeholder="new_password" name="new_password">
+                        <button type="submit">Update</button>
+                    </form>
                 </div>
-                <p class="info_line">For any further information or inquiries contact us at our hotline 15355.</p>
+            </div>
             </main>
             <!-- main body -->
 
